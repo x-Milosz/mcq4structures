@@ -8,12 +8,13 @@ import org.springframework.core.io.ClassPathResource;
 @Configuration
 public class WebConfig {
 
-    @Bean
-    public PropertySourcesPlaceholderConfigurer configurePlaceholder(){
-        PropertySourcesPlaceholderConfigurer placeholderConfigurer = new PropertySourcesPlaceholderConfigurer();
-        placeholderConfigurer.setLocations(new ClassPathResource("git.properties"));
-        placeholderConfigurer.setIgnoreResourceNotFound(true);
-        placeholderConfigurer.setIgnoreUnresolvablePlaceholders(true);
-        return placeholderConfigurer;
-    }
+  @Bean
+  public PropertySourcesPlaceholderConfigurer configurePlaceholder() {
+    PropertySourcesPlaceholderConfigurer placeholderConfigurer =
+        new PropertySourcesPlaceholderConfigurer();
+    placeholderConfigurer.setLocations(new ClassPathResource("git.properties"));
+    placeholderConfigurer.setIgnoreResourceNotFound(true);
+    placeholderConfigurer.setIgnoreUnresolvablePlaceholders(true);
+    return placeholderConfigurer;
+  }
 }
