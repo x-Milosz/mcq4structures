@@ -1,6 +1,5 @@
 package pl.poznan.put.ws;
 
-import jakarta.validation.constraints.NotEmpty;
 import org.hibernate.validator.constraints.Length;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.ResponseEntity;
@@ -10,6 +9,7 @@ import pl.poznan.put.ws.model.Torsion;
 import pl.poznan.put.ws.model.Version;
 
 import javax.validation.Valid;
+import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.Positive;
 
 @RestController
